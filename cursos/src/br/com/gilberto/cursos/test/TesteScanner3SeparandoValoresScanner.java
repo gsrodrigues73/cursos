@@ -1,4 +1,4 @@
-package com.gilberto.cursos;
+package br.com.gilberto.cursos.test;
 
 import java.io.File;
 import java.io.IOException;
