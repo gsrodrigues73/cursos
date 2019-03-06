@@ -8,7 +8,7 @@ public class TesteWrapperInteger {
 	public static void main(String[] args) {
 
 		int idade = 29;
-		Integer idadeRef = Integer.valueOf(29); //autoboxing
+		Integer idadeRef = Integer.valueOf(idade); //autoboxing
 		System.out.println(idadeRef.doubleValue());
 
 		System.out.println(Integer.MAX_VALUE);
@@ -18,7 +18,7 @@ public class TesteWrapperInteger {
 		System.out.println(Integer.BYTES);
 		
 		int valor = idadeRef.intValue(); //unboxing
-		String s = args[0];//"10"
+		String s = args[valor];//"10"
 		//Integer numero = Integer.valueOf(s);
 		int numero = Integer.parseInt(s);
 		System.out.println(numero);
