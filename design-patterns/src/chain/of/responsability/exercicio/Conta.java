@@ -4,6 +4,9 @@ public class Conta {
 	
 	private String titular;
 	private double saldo;
+	// atributos criados para atender o RelatorioComplexo
+	private int numero;
+	private int agencia;
 	
 	public Conta(String titular, double saldo) {
 		this.titular = titular;
@@ -16,6 +19,14 @@ public class Conta {
 
 	public double getSaldo() {
 		return saldo;
+	}
+
+	public int getNumero() {
+		return numero;
+	}
+
+	public int getAgencia() {
+		return agencia;
 	}
 	
 	

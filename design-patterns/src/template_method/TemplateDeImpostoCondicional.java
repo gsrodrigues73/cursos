@@ -4,9 +4,10 @@ import strategy.Imposto;
 import strategy.Orcamento;
 
 public abstract class TemplateDeImpostoCondicional implements Imposto {
-
+	
 	@Override
 	public double calcula(Orcamento orcamento) {
+	//public final double calcula(Orcamento orcamento) { // O termo FINAL não permite que o método seja reescrito
 		if(deveUsarMaximaTaxacao(orcamento)) {
 			return maximaTaxacao(orcamento);
 		}
