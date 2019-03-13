@@ -21,6 +21,7 @@ public class Orcamento {
 //	public static final int APROVADO = 2;
 	
 	EstadoDeUmOrcamento estadoAtual;
+	
 	public Orcamento(double valor) {
 		this.valor = valor;
 		this.itens = new ArrayList<>();
