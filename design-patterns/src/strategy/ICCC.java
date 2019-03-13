@@ -1,6 +1,10 @@
 package strategy;
 
-public class ICCC implements Imposto {
+import decorator.Imposto;
+
+// Alterado para extends para atender TesteDeImpostosComplexos
+//public class ICCC implements Imposto {
+public class ICCC extends Imposto {
 
 	@Override
 	public double calcula(Orcamento orcamento) {

@@ -1,7 +1,6 @@
 package strategy;
 
-@Deprecated
-public interface Imposto {
+public interface Imposto_antigo {
 
 	public double calcula(Orcamento orcamento);
 }

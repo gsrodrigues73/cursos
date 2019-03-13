@@ -7,6 +7,13 @@ import strategy.Orcamento;
 //Alterado para extends para atender TesteDeImpostosComplexos
 public abstract class TemplateDeImpostoCondicional extends Imposto {
 	
+	public TemplateDeImpostoCondicional(Imposto outroImposto) {
+		super(outroImposto);
+	}
+	
+	public TemplateDeImpostoCondicional() {
+	}
+	
 	@Override
 	public double calcula(Orcamento orcamento) {
 	//public final double calcula(Orcamento orcamento) { // O termo FINAL não permite que o método seja reescrito

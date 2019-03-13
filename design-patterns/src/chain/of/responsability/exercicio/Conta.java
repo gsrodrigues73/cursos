@@ -1,5 +1,7 @@
 package chain.of.responsability.exercicio;
 
+import java.util.Calendar;
+
 public class Conta {
 	
 	private String titular;
@@ -7,6 +9,8 @@ public class Conta {
 	// atributos criados para atender o RelatorioComplexo
 	private int numero;
 	private int agencia;
+	// atributo criado para atender o Filtro (decorator)
+	private Calendar dataAbertura;
 	
 	public Conta(String titular, double saldo) {
 		this.titular = titular;
@@ -29,5 +33,9 @@ public class Conta {
 		return agencia;
 	}
 	
+	public Calendar getDataAbertura() {
+		return dataAbertura;
+	}
+
 	
 }

@@ -1,11 +1,20 @@
 package template_method;
 
 import chain.of.responsability.Item;
+import decorator.Imposto;
 import strategy.Orcamento;
 
 //public class IKCV implements Imposto {
 public class IKCV extends TemplateDeImpostoCondicional {
-
+	
+	// Construtores incluídos para atender TesteDeImpostosComplexos
+	public IKCV(Imposto outroImposto) {
+		super(outroImposto);
+	}
+	
+	public IKCV() {
+	}
+	
 //	@Override
 //	public double calcula(Orcamento orcamento) {
 //		if(orcamento.getValor() > 500 && temItemMaiorQue100Reais(orcamento))

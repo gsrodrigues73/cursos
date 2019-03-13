@@ -1,10 +1,19 @@
 package template_method;
 
+import decorator.Imposto;
 import strategy.Orcamento;
 
 //public class ICPP implements Imposto {
 public class ICPP extends TemplateDeImpostoCondicional {
-
+	
+	// Construtores incluídos para atender TesteDeImpostosComplexos
+	public ICPP(Imposto outroImposto) {
+		super(outroImposto);
+	}
+	
+	public ICPP() {
+	}
+	
 //	@Override
 //	public double calcula(Orcamento orcamento) {
 //		if(orcamento.getValor() > 500)
