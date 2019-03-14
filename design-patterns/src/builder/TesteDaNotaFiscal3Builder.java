@@ -14,7 +14,7 @@ public class TesteDaNotaFiscal3Builder {
 		.comObservacoes("observacoes")
 		.naDataAtual();
 		
-		NotaFiscal nf = builder.constroe();
+		NotaFiscal nf = builder.constroi();
 		
 		System.out.println(nf.getValorBruto());
 		
