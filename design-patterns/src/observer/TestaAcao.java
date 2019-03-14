@@ -3,6 +3,7 @@ package observer;
 import builder.ItemDaNota;
 import builder.NotaFiscal;
 import builder.NotaFiscalBuilder;
+import observer.exercicio.Multiplicador;
 
 public class TestaAcao {
 

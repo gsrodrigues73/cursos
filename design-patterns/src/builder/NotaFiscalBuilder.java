@@ -19,8 +19,13 @@ public class NotaFiscalBuilder {
 	// Atributo e métodos criados para atender Observer
 	private List<AcaoAposGerarNota> todasAcoesASeremExecutadas;
 	
+	public NotaFiscalBuilder(List<AcaoAposGerarNota> lista) {
+//		this.todasAcoesASeremExecutadas = new ArrayList<AcaoAposGerarNota>();
+		this.todasAcoesASeremExecutadas = lista;
+		
+	}
+	
 	public NotaFiscalBuilder() {
-		todasAcoesASeremExecutadas = new ArrayList<AcaoAposGerarNota>();
 	}
 	
 	public void adicionaAcao(AcaoAposGerarNota acao) {
