@@ -1,6 +1,6 @@
-package state.exercico;
+package state.exercicio;
 
-import strategy.exercico.ContaBancaria;
+import strategy.exercicio.ContaBancaria;
 
 public interface EstadoDaConta {
 	

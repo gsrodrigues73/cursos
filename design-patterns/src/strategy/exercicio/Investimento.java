@@ -1,4 +1,4 @@
-package strategy.exercico;
+package strategy.exercicio;
 
 public interface Investimento {
 

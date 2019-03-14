@@ -1,4 +1,4 @@
-package strategy.exercico;
+package strategy.exercicio;
 
 import java.util.Random;
 

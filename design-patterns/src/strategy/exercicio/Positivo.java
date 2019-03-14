@@ -1,6 +1,6 @@
-package strategy.exercico;
+package strategy.exercicio;
 
-import state.exercico.EstadoDaConta;
+import state.exercicio.EstadoDaConta;
 
 // Classe criada para atender TestaEstadosDaConta
 public class Positivo implements EstadoDaConta {
