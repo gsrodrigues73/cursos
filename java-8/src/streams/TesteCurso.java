@@ -3,6 +3,7 @@ package streams;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
+import java.util.stream.IntStream;
 
 public class TesteCurso {
 	
@@ -19,7 +20,8 @@ public class TesteCurso {
 //		cursos.forEach(c -> System.out.println(c.getNome()));
 		
 		// Não altera a coleção original (cursos)
-		int sum = cursos.stream()
+//		IntStream mapToInt = cursos.stream()		// Usando o mapToInt
+		int sum = cursos.stream()					// Usando o mapToInt + sum()
 			.filter(c -> c.getAlunos() >= 100)
 //			.forEach(c -> System.out.println(c.getNome()))
 			
