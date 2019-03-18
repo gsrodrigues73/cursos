@@ -5,6 +5,7 @@ import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.Month;
 import java.time.Period;
+import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 
 public class Datas {
@@ -12,6 +13,9 @@ public class Datas {
 	public static void main(String[] args) {
 		LocalDate hoje = LocalDate.now();
 		System.out.println(hoje);
+		
+		ZonedDateTime teste = ZonedDateTime.now();
+		System.out.println(teste);
 		
 		LocalDate olimpiadas = LocalDate.of(2016, Month.JUNE, 5);
 		int anos = hoje.getYear() - olimpiadas.getYear();
