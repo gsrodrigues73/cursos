@@ -70,5 +70,7 @@
 	<c:set var="nome" value="João da Silva" />
 	<c:out value="${nome}" />
 	<br>Outro teste ${nome}
+	
+	<c:import url="../_comum/rodape.jsp" />
 </body>
 </html>
