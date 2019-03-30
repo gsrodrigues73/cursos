@@ -80,11 +80,11 @@ public class NotaFiscalBuilder {
 //		new EnviadorDeSms().enviaPorSMS(nf);
 //		new Impressora().imprime(nf);
 		
-		// criada a interface AcaoAposGerarNota
-		for (AcaoAposGerarNota acao : todasAcoesASeremExecutadas) {
-			acao.executa(nf);
-			
-		}
+//		// criada para a interface AcaoAposGerarNota (observer)
+//		for (AcaoAposGerarNota acao : todasAcoesASeremExecutadas) {
+//			acao.executa(nf);
+//			
+//		}
 		
 		return nf;
 	}
