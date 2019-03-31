@@ -2,6 +2,8 @@ package decorator;
 
 import strategy.Orcamento;
 
+// Alterado para classe abstrata para atender TesteDeImpostosComplexos
+//public interface Imposto {
 public abstract class Imposto {
 	
 	protected Imposto outroImposto;
