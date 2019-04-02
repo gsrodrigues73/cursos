@@ -11,7 +11,7 @@ public class TestaFactory {
 		Connection c = new ConnectionFactory().getConnection();
 		
 		PreparedStatement sql = c.prepareStatement("select * from tabela");
-		
+		sql.close();
 		//...
 		
 	}
