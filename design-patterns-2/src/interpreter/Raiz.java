@@ -1,5 +1,7 @@
 package interpreter;
 
+import visitor.Visitor;
+
 public class Raiz implements Expressao {
 
 	private Expressao numero;
@@ -14,6 +16,13 @@ public class Raiz implements Expressao {
 		double expressao = numero.avalia();
 		
 		return (int) Math.sqrt(expressao);
+	}
+
+	// criado para atender a aula Visitor
+	@Override
+	public void aceita(Visitor impressora) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }

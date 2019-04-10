@@ -1,5 +1,7 @@
 package interpreter;
 
+import visitor.Visitor;
+
 public class Divisao implements Expressao {
 
 	private Expressao esquerda;
@@ -20,6 +22,13 @@ public class Divisao implements Expressao {
 		int valorDaDireita = direita.avalia();
 		
 		return valorDaEsquerda / valorDaDireita;
+	}
+
+	// criado para atender a aula Visitor
+	@Override
+	public void aceita(Visitor impressora) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }

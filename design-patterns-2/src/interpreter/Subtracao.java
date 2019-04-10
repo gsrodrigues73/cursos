@@ -1,5 +1,7 @@
 package interpreter;
 
+import visitor.Visitor;
+
 public class Subtracao implements Expressao {
 	
 	private Expressao esquerda;
@@ -16,5 +18,22 @@ public class Subtracao implements Expressao {
 		int valorDaDireita = direita.avalia();
 		
 		return valorDaEsquerda - valorDaDireita;
+	}
+
+	// criado para atender a aula Visitor
+	public Expressao getEsquerda() {
+		return esquerda;
+	}
+	
+	// criado para atender a aula Visitor
+	public Expressao getDireita() {
+		return direita;
+	}
+
+	// criado para atender a aula Visitor
+	@Override
+	public void aceita(Visitor impressora) {
+		impressora.visitaSubtracao(this);
+		
 	}
 }
