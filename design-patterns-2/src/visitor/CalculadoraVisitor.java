@@ -17,7 +17,8 @@ public class CalculadoraVisitor {
 		
 		System.out.println(resultado);
 		
-		Visitor impressora = new ImpressoraVisitor();
+		//Visitor impressora = new ImpressoraVisitor();
+		Visitor impressora = new OutraImpressoraVisitor();
 		
 		soma.aceita(impressora);
 		
