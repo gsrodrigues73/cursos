@@ -8,6 +8,6 @@ public class ServicoSingleton {
 		if(instancia == null) {
 			instancia = new Servico();
 		}
-		return instancia;
+		return instancia; 
 	}
 }
